@@ -25,13 +25,17 @@ Welcome to Pyroducts!
 
 We bring you facts about active volcanoes in the U.S.! Today we're visiting Hawaii.
 
-Which 
+Which Hawaiian volcano would you like to learn about? Type that volcano's number and press 'enter'.
 
-—List of questions
+—List volcano names
+-ask for user input
+-show user the volcano name and summary
+
+51 13
 
 Are you burning to know the answer? Enter the number of the question to see the answer. 
 
-<user enters number and answer appears under the numbered question> 
+user enters number and answer appears under the numbered question
 
 Do you want to pick another question? Y
 If yes, show list of questions again.
