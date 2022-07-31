@@ -2,7 +2,7 @@
 
 require_relative "pyroducts/version"
 require_relative "pyroducts/cli"
-
+require 'pry'
 
 module Pyroducts
   class Error < StandardError; end
