@@ -9,9 +9,13 @@ User is a volcano enthusiast. They’re about to travel to Hawaii and they want 
 
 Go with https://www.usgs.gov/observatories/hvo/active-volcanoes-hawaii and individual volcano pages for quick facts and summaries.
 
-Pyroducts gem
-Class Volcano
-Attributes
+Pyroducts gem-
+Class -
+Volcano - know about volcanoes and store them
+Scraper - going out and getting data
+CLI - interact with user
+
+Attributes -
 Name
 Location
 Status
@@ -24,27 +28,25 @@ CLI flow
 Welcome to Pyroducts!
 
 We bring you facts about active volcanoes in the U.S.! Today we're visiting Hawaii.
-
-Which Hawaiian volcano would you like to learn about? Type that volcano's number and press 'enter'.
-
 —List volcano names
+
 -ask for user input
--show user the volcano name and summary
+Which Hawaiian volcano would you like to learn about? Type that volcano's number and press 'enter'. Type 'exit' to leave the app at any time.
 
-51 13
+-show user the volcano name
+-user enters number and the volcano name and summary show
 
-Are you burning to know the answer? Enter the number of the question to see the answer. 
+Do you want to read some quick facts about #{volcano} Y/N?
+-if yes, show quick facts for #{volcano}.
 
-user enters number and answer appears under the numbered question
-
-Do you want to pick another question? Y
-If yes, show list of questions again.
-
+Would you like to read about another volcano? Y/N 
+if yes go back to first question
 If no, exit.
-Remember Pompeii. 
 
-Invalid input - (like a misspelled word)
-Watch out! The floor is lava!
+Exit - Remember Pompeii. 
 
+Invalid input - Watch out! The floor is lava!
+-go back to first question
 
+(like a misspelled word)
 ________________________________
