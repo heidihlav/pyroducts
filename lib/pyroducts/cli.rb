@@ -53,7 +53,7 @@ class Pyroducts::CLI
             volcano = volcano.description[input.to_i - 1]
             volcano.get_volcano_details
             show_quick_facts_for(chosen_volcano)
-          if user_input == 'N'
+          elsif user_input == 'N'
             list_volcano_names
           end
     end
@@ -68,7 +68,7 @@ class Pyroducts::CLI
     @input = gets.strip
         if @input == 'Y'
             list_volcano_names
-        if @input == 'N'
+        elsif @input == 'N'
            goodbye
       end
     end
