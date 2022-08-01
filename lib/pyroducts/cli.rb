@@ -27,12 +27,19 @@ class Pyroducts::CLI
     #will need @volcanoes instance var 
     #- get names from scraper class
 
-    def get_summaries
+    def get_descriptions
         chosen_volcano = gets.strip.to_i
-        show_summary_for(chosen_volcano) if valid_input(chosen_volcano, @volcanoes)
+        show_description_for(chosen_volcano) if valid_input(chosen_volcano, @volcanoes)
     end
 
-    def show_summary_for()
+    def show_description_for(chosen_volcano)
+        volcano = @volcanoes[chosen_volcano - 1]
+        descriptions = volcano.get_descriptions
+        descriptions.each.with_index(1) do |volcano, i|
+            puts "#{i}. #{volcano.name}"
+        end
+    end
+    #will need to define get_summaries in volcano class and call scraped summaries
 
     def get_quick_facts
         puts "Would you like to read some quick facts for #{volcano.name} "
