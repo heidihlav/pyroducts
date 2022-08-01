@@ -3,12 +3,13 @@ class Pyroducts::CLI
         puts "Welcome to Pyroducts! We bring you facts about active volcanoes in the U.S.! Today we're visiting Hawaii."
         @input = ""
         until @input == "exit"
-        # get volcano name
-        # list the volcano names 
-        # get summaries for (volcano)
-        # get facts for (volcano)
+            get_volcanoes
+            list_volcano_names
+            show_description_for(chosen_volcano)
+            show_quick_facts_for(chosen_volcano)
+            see_more_volcanoes
         end
-        goodbye 
+            goodbye 
     end
 
     def get_volcanoes
@@ -46,7 +47,7 @@ class Pyroducts::CLI
     #will need to define get_user_descriptions in volcano class and call scraped summaries
 
     def get_quick_facts_for(chosen_volcano)
-        puts "Would you like to read some quick facts for #{chosen_volcano}?"
+        puts "Would you like to read some quick facts for #{chosen_volcano}? Y/N"
         user_input = gets.strip 
           if user_input == 'Y'
             volcano = volcano.description[input.to_i - 1]
@@ -72,8 +73,10 @@ class Pyroducts::CLI
       end
     end
 
-      def goodbye
+    def goodbye
         puts "Goodbye and safe travels!"
-      end
+    end
+
+
 
 end
