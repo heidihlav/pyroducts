@@ -28,9 +28,25 @@ class Pyroducts::CLI
     #- get names from scraper class
 
     def get_summaries
-        volcano_index = gets.strip.to_i
-        show_summary_for(volcano_index) if valid_input(volcano_index, @volcanoes)
+        chosen_volcano = gets.strip.to_i
+        show_summary_for(chosen_volcano) if valid_input(chosen_volcano, @volcanoes)
     end
+
+    def show_summary_for()
+
+    def get_quick_facts
+        puts "Would you like to read some quick facts for #{volcano.name} "
+
+
+    end
+
+    def valid_input(input, data)
+        input.to_i <= data.length && input.to_i > 0
+    end 
+
+
+
+
 
     def goodbye
         puts "Goodbye and safe travels!"
