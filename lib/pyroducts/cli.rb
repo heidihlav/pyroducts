@@ -57,15 +57,23 @@ class Pyroducts::CLI
           end
     end
 
-    
-
-
-
-
-
-
-    def goodbye
-        puts "Goodbye and safe travels!"
+    def show_quick_facts_for(chosen_volcano)
+        puts "Here are quick facts about #{chosen_volcano}."
+        "#{chosen_volcano.name} - #{chosen_volcano.location} - #{chosen_volcano.status} - #{chosen_volcano.type}"
     end
+
+    def see_more_volcanoes
+    puts "Would you like to read about another volcano? Y/N"
+    @input = gets.strip
+        if @input == 'Y'
+            list_volcano_names
+        if @input == 'N'
+           goodbye
+      end
+    end
+
+      def goodbye
+        puts "Goodbye and safe travels!"
+      end
 
 end
