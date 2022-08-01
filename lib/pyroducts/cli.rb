@@ -11,10 +11,16 @@ class Pyroducts::CLI
         goodbye 
     end
 
-    def get
+    def get_volcanoes
+        @volcanoes = Pyroducts::Volcano.all
+    end
 
     # def initialize
         
     # end
+
+    def goodbye
+        puts "Goodbye and safe travels!"
+    end
 
 end
