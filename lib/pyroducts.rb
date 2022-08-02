@@ -1,3 +1,4 @@
+# environment file
 # frozen_string_literal: true
 
 require_relative "./pyroducts/version"
