@@ -3,4 +3,5 @@
 require_relative '../lib/environment'
 # require_relative '../lib/scraper'
 
-Pyroducts::CLI.new.call
+# Pyroducts::CLI.new.call
+Pyroducts::Scraper.new
