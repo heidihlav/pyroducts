@@ -1,10 +1,16 @@
 class Pyroducts::Volcano
+    attr_accessor :name, :location, :status, :type, :description
+    @@all = []
 
-scrape_it = Nokogiri::HTML(URI.open("https://www.usgs.gov/observatories/hvo/active-volcanoes-hawaii"))
-
-array = scrape_it.css("p a strong").text
-
-puts array
+    def initialize(name, location, status, type, description)
+        name
+        location
+        status 
+        type 
+        description
+            
+    end
+    
 
 
 end
