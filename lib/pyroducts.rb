@@ -2,6 +2,9 @@
 
 require_relative "pyroducts/version"
 require_relative "pyroducts/cli"
+require_relative "pyroducts/scraper"
+require_relative "pyroducts/volcano"
+
 require 'pry'
 
 module Pyroducts

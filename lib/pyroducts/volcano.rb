@@ -11,15 +11,13 @@ class Pyroducts::Volcano
         save
     end
 
-    def get_volcano_descriptions
-        Pyroducts::Scraper.scrape_descriptions(self)
-    end
-
     def self.all
         @@all
     end
 
-
+    def get_volcano_descriptions
+        Pyroducts::Scraper.scrape_descriptions(self)
+    end
 
     def save
         @@all << self
@@ -29,10 +27,6 @@ class Pyroducts::Volcano
 
 
 
-
 end
 
 
-# def get_volcano_details
-#     EdenEvents::Scraper.scrape_key_info(self) if @key_info.empty?
-#   end 
