@@ -6,6 +6,8 @@ require_relative "pyroducts/scraper"
 require_relative "pyroducts/volcano"
 
 require 'pry'
+require 'nokogiri'
+require 'open-uri'
 
 module Pyroducts
   class Error < StandardError; end

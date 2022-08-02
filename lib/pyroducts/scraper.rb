@@ -1,12 +1,11 @@
 class Pyroducts::Scraper
 
-# scrape_it = Nokogiri::HTML(URI.open("https://www.usgs.gov/observatories/hvo/active-volcanoes-hawaii"))
+    doc = Nokogiri::HTML(URI.open("https://www.usgs.gov/observatories/hvo/active-volcanoes-hawaii"))
 
-# array = scrape_it.css("p a strong").text
+    names = doc.css("p a").text
 
-# puts array
 
-# binding.pry
+binding.pry
 
 end
 
