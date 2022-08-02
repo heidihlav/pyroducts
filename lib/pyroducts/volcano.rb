@@ -3,14 +3,31 @@ class Pyroducts::Volcano
     @@all = []
 
     def initialize(name, location, status, type, description)
-        name
-        location
-        status 
-        type 
-        description
-            
+        @name = name
+        @location = location
+        @status = status 
+        @type = type 
+        @description = description
+        save
     end
-    
+
+    def get_volcano_descriptions
+        Pyroducts::Scraper.scrape_descriptions(self)
+    end
+
+    def self.all
+        @@all
+    end
+
+
+
+    def save
+        @@all << self
+    end
+
+
+
+
 
 
 end
