@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/pyroducts'
+require_relative '../lib/environment'
 # require_relative '../lib/scraper'
 
 Pyroducts::CLI.new.call

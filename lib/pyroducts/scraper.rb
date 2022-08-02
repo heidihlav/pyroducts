@@ -1,4 +1,4 @@
-class Pyroducts::Scraper
+class Scraper
 
     def self.scrape_names
     doc = Nokogiri::HTML(URI.open("https://www.usgs.gov/observatories/hvo/active-volcanoes-hawaii"))

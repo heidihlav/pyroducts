@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 module Pyroducts
-  class Error < StandardError; end
+  # class Error < StandardError; end
   # Your code goes here...
 end
 
