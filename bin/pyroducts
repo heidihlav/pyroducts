@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require_relative "../lib/pyroducts"
+require_relative '../lib/pyroducts'
 
 Pyroducts::CLI.new.call
