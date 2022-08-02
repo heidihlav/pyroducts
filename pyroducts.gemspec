@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/pyroducts/version"
+require_relative "pyroducts/version"
 
 Gem::Specification.new do |spec|
   spec.name = "pyroducts"
